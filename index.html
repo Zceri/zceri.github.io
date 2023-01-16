@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title> Log In </title>
+<style>
+p {
+    display: inline;
+}
+h3 {
+    display: inline;
+}
+
+</style>
+</head>
 <body>
-<h1> Hello World! </h1>
-<p> with github babyyyyyyyyyy </p>
-<p> dadmmit mom lol</p>
+<center>
+<h3>Username</h3>
+
+<input type="text" id="myText"> <br> <br>
+
+
+<h3>Password</h3>
+
+
+<input type="text" id="myText2"> <br> <br>
+
+<button onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var y = document.getElementById("myText2").value;
+  document.getElementById("demo").innerHTML = x;
+}
+
+</script>
+
 </body>
 </html>
