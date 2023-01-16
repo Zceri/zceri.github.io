@@ -8,6 +8,30 @@ p {
 }
 h3 {
     display: inline;
+	font-size: 3em;
+}
+input[type=text], select{
+	font-size:30px;
+	width:125px;
+	height: 60px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+input[type=password], select{
+	font-size:30px;
+	width:125px;
+	height: 60px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
 }
 
 </style>
@@ -15,15 +39,15 @@ h3 {
 <body>
 <center>
 <br><br><br><br><br><br><br><br><br><br><br>
-<h3>Username</h3>
+<h3>Username</h3> &nbsp
 
 <input type="text" id="myText"> <br> <br>
 
 
-<h3>Password</h3>
+<h3>Password</h3> &nbsp &nbsp
 
 
-<input type="text" id="myText2"> <br> <br>
+<input type="password" id="myText2"> <br> <br>
 
 <button onclick="myFunction()">Submit</button>
 
@@ -31,7 +55,7 @@ h3 {
 function myFunction() {
   var x = document.getElementById("myText").value;
   var y = document.getElementById("myText2").value;
-  document.getElementById("demo").innerHTML = x;
+  window.open("page1.html", "_self");
 }
 
 </script>
