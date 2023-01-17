@@ -35,26 +35,40 @@ li a {
   margin: 1px 10px;
   text-decoration: none;
   color: white;
+  font-family: arial;
   
 }
 
-li b {
-  padding: 20px 32px;
+p2 {
+  color: #8c8f8d;
+  font-family: arial;
+  font-size: 10px;
+  vertical-align: super;
+  padding-left: 350px;
+}
+
+li c {
+  padding: 20px 320px;
   display: inline-block;
-  width: 80px;
-  background-color: #33ccff;
-  text-align: center;
+  width: 500px;
+  background-color: #cccccc;
   border: none;
   border-radius: 8px;
-  margin: 1px 10px;
   text-decoration: none;
-  color: white;
-
-
+  color: #8c8f8d;
+  font-family: arial;
 }
 
 
 p1 {
+  color: #33ccff;
+  font-family: arial;
+  font-size: 30px;
+  vertical-align: super;
+  font-style: bold;
+  padding-left: 350px;
+}
+
   
 
 }
@@ -66,8 +80,10 @@ p1 {
 <li><a href=# onclick="myFunction()">Open Orders</a></li>
 <li><a href=# onclick="myFunction()">Operator Options</a></li>
 <li><a href=# onclick="myFunction()">Order Options</a></li>
-<li><a href=# onclick="myFunction()">Switch To Eat In</a></li>
+<li><a href=# onclick="forhereswitch()"><p3 id="switch"></p3></a></li>
 <li><a href=# onclick="myFunction()">Loyalty<br> -</a></li>
+<li><br><p2 id="forhere"></p2><br><p1>Order # 696969</p1></li>
+
 </ul>
 
 
@@ -77,7 +93,24 @@ p1 {
 function myFunction() {
 document.getElementById("demo").innerHTML = "Hello Javascript!"
   }
-  
+
+var forhere = 1;
+
+document.getElementById("forhere").innerHTML = "Section/Screen: TakeOut/Take Out";
+document.getElementById("switch").innerHTML = "Switch To Eat In";
+
+function forhereswitch() {
+  forhere++;
+  if (forhere%2 == 1) {
+    document.getElementById("forhere").innerHTML = "Section/Screen: TakeOut/Take Out";
+	document.getElementById("switch").innerHTML = "Switch To Eat In";}
+  else {
+    document.getElementById("forhere").innerHTML = "Section/Screen: EatIn/Eat In";
+	document.getElementById("switch").innerHTML = "Switch To Take Out";}
+
+}
+
+ 
 /*function function2() {
 document.getElementById("demo").innerHTML = "Hello Javascript!"
 }*/
