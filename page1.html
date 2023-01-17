@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> First Page </title>
+<title> POS System </title>
 <style>
+
+#header h1{
+  margin: 0px;
+}
+
+body{
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cccccc;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  padding: 20px 32px;
+  display: inline-block;
+  width: 80px;
+  background-color: #33ccff;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  margin: 1px 10px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+li b {
+  padding: 20px 32px;
+  display: inline-block;
+  width: 80px;
+  background-color: #33ccff;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  margin: 1px 10px;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+
+p1 {
+  
+
+}
+
 </style>
 </head>
 <body>
-<center>
-<br><br><br><br><br><br><br><br><br><br><br>
-<h3>Sup hoe</h3>
+<ul class="main-nav">
+<li><a href=# onclick="myFunction()">Open Orders</a></li>
+<li><a href=# onclick="myFunction()">Operator Options</a></li>
+<li><a href=# onclick="myFunction()">Order Options</a></li>
+<li><a href=# onclick="myFunction()">Switch To Eat In</a></li>
+<li><a href=# onclick="myFunction()">Loyalty<br> -</a></li>
+</ul>
 
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello Javascript!"
+  }
+  
+/*function function2() {
+document.getElementById("demo").innerHTML = "Hello Javascript!"
+}*/
+</script>
 </body>
-</html>
+</html>	
