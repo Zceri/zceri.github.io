@@ -80,6 +80,11 @@ p1 {
   padding-left: 350px;
 }
 
+p {
+  color: black;
+  margin: 0px;
+}
+
 .button {
   background-color: white;
   width: 150px;
@@ -121,6 +126,40 @@ p1 {
 
 }
 
+.button2 {
+  background-color: white;
+  width: 175px;
+  height: 100px;
+  color: black;
+  border: none;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: tahoma;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.button3 {
+  background-color: #dbdbdb;
+  width: 75px;
+  height: 50px;
+  align: center;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: tahoma;
+  display: inline-table;
+  padding: auto;
+  vertical-align: middle;
+}
+
 .split {
   height: 89%;
   position: fixed;
@@ -135,26 +174,14 @@ p1 {
   right: 0;
   background-color: white;
   width: 35%;
+  height: 100%;
   border-left: solid;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-
 .box {
-  width: 100%;
+  width: 500px;
   height: 100px;
-  align: left;
+  align: center;
   border: solid;
   border-color: gray;
   color: white;
@@ -166,18 +193,18 @@ p1 {
   display: inline-table;
   padding: auto;
   vertical-align: middle;
-
+}
 
 </style>
 </head>
 <body>
 <ul class="main-nav">
-<li><a href=# onclick="myFunction()">Open Orders</a></li>
-<li><a href=# onclick="myFunction()">Operator Options</a></li>
-<li><a href=# onclick="myFunction()">Order Options</a></li>
-<li><a href=# onclick="forhereswitch()"><p3 id="switch"></p3></a></li>
-<li><a href=# onclick="myFunction()">Loyalty<br> -</a></li>
-<li><br><p2 id="forhere"></p2><br><p1>Order # 696969</p1></li>
+  <li><a href=# onclick="myFunction()">Open Orders</a></li>
+  <li><a href=# onclick="myFunction()">Operator Options</a></li>
+  <li><a href=# onclick="myFunction()">Order Options</a></li>
+  <li><a href=# onclick="forhereswitch()"><p3 id="switch"></p3></a></li>
+  <li><a href=# onclick="myFunction()">Loyalty<br> -</a></li>
+  <li><br><p2 id="forhere"></p2><br><p1>Order # 696969</p1></li>
 </ul>
 
 <br>
@@ -189,18 +216,14 @@ p1 {
 
 <br><br><br><br><br>
 
-<div class="split left">
-  <div class="centered">
-    <img src="img_avatar2.png" alt="Avatar woman">
-    <h2>Jane Flex</h2>
-    <p>Some text.</p>
-  </div>
-</div>
-
 <div class="split right">
-  <div class="box"> sup </div>
-  
+  <div class="box">
+	<button class="button2">Select item to update Quantity:</button>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button class="button3">+</button>
+	<button class="button3">-</button>
   </div>
+  
 </div>
 
 <script>
