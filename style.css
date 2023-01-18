@@ -141,6 +141,41 @@ p {
   cursor: pointer;
 }
 
+.button4 {
+  background-color: white;
+  width: 60px;
+  height: 45px;
+  border: none;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: tahoma;
+  padding: auto;
+  vertical-align: middle;
+  cursor: default;
+  text-align: left;
+}
+
+.button5 {
+  background-color: #4FB83D;
+  width: 60px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: tahoma;
+  padding: auto;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+}
+
 .split {
   height: 89%;
   position: fixed;
@@ -187,13 +222,48 @@ p {
   vertical-align: middle;
 }
 
+.box2 {
+  width: 405px;
+  height: 80px;
+  border: solid;
+  border-top: none;
+  border-color: gray;
+  color: black;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: tahoma;
+  display: inline-table;
+  padding: auto;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
 .title {
   width: 410px;
-  height: 30px;
+  height: 25px;
   border: solid;
   border-color: gray;
   color: white;
   background-color: gray;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: tahoma;
+  display: inline-table;
+  padding: auto;
+  vertical-align: middle;
+}
+
+.itemsummary {
+  width: 410px;
+  height: 270px;
+  border: solid;
+  border-color: gray;
+  color: black;
+  background-color: white;
   display: inline-block;
   font-size: 16px;
   margin-left: 20px;
