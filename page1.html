@@ -3,199 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> POS System </title>
-<style>
-
-#header h1{
-  margin: 0px;
-}
-
-#outer
-{
-    width:100%;
-    text-align: center;
-}
-.inner
-{
-    display: inline-block;
-}
-
-body{
-  margin: 0px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #cccccc;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  padding: 20px 32px;
-  display: inline-block;
-  width: 80px;
-  background-color: #33ccff;
-  text-align: center;
-  border: none;
-  border-radius: 8px;
-  margin: 1px 10px;
-  text-decoration: none;
-  color: white;
-  font-family: arial;
-  
-}
-
-p2 {
-  color: #8c8f8d;
-  font-family: arial;
-  font-size: 10px;
-  vertical-align: super;
-  padding-left: 350px;
-}
-
-li c {
-  padding: 20px 320px;
-  display: inline-block;
-  width: 500px;
-  background-color: #cccccc;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #8c8f8d;
-  font-family: arial;
-}
-
-
-p1 {
-  color: #33ccff;
-  font-family: tahoma;
-  font-size: 30px;
-  vertical-align: super;
-  font-weight: bold;
-  padding-left: 350px;
-}
-
-p {
-  color: black;
-  margin: 0px;
-}
-
-.button {
-  background-color: white;
-  width: 150px;
-  height: 100px;
-  align: center;
-  border: solid;
-  border-color: red;
-  border-radius: 15px;
-  color: black;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-family: tahoma;
-  display: inline-block;
-  padding: auto;
-  vertical-align: middle;
-}
-
-.button1 {
-  background-color: white;
-  width: 150px;
-  height: 100px;
-  align: center;
-  border: solid;
-  border-color: #33CCFF;
-  border-radius: 15px;
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-family: tahoma;
-  display: inline-table;
-  padding: auto;
-  vertical-align: middle;
-
-}
-
-.button2 {
-  background-color: white;
-  width: 175px;
-  height: 100px;
-  color: black;
-  border: none;
-  font-size: 16px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-family: tahoma;
-  vertical-align: middle;
-  margin: auto;
-}
-
-.button3 {
-  background-color: #dbdbdb;
-  width: 75px;
-  height: 50px;
-  align: center;
-  border: solid;
-  border-color: black;
-  border-radius: 15px;
-  color: black;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-family: tahoma;
-  display: inline-table;
-  padding: auto;
-  vertical-align: middle;
-}
-
-.split {
-  height: 89%;
-  position: fixed;
-  z-index: 1;
-  top: 11%;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-
-.right {
-  right: 0;
-  background-color: white;
-  width: 35%;
-  height: 100%;
-  border-left: solid;
-}
-
-.box {
-  width: 500px;
-  height: 100px;
-  align: center;
-  border: solid;
-  border-color: gray;
-  color: white;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 20px;
-  font-weight: bold;
-  font-family: tahoma;
-  display: inline-table;
-  padding: auto;
-  vertical-align: middle;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <ul class="main-nav">
@@ -204,53 +12,115 @@ p {
   <li><a href=# onclick="myFunction()">Order Options</a></li>
   <li><a href=# onclick="forhereswitch()"><p3 id="switch"></p3></a></li>
   <li><a href=# onclick="myFunction()">Loyalty<br> -</a></li>
-  <li><br><p2 id="forhere"></p2><br><p1>Order # 696969</p1></li>
+  <li><br><p2 id="forhere"></p2><br><br><p1>Order # 696969</p1></li>
 </ul>
 
 <br>
-<button class="button">CINNAMON <br> BUNS</button>
+<div class="split left" id="food">
+<a>
+<button class="button">CINNAMON BUNS</button>
 <button class="button">PASTRIES</button>
-<button class="button1">NO TAX PASTRIES</button>
+<button style="border-color: #33CCFF" class="button">NO TAX PASTRIES</button>
 <button class="button">SAVOURY</button>
 <button class="button">ICING</button>
+</a>
+</div>
+
+<div class="split left" id="hotdrinks">
+<a>
+<button class="button">BREWED COFFEE</button>
+<button class="button">FRENCH PRESS</button>
+<button class="button">SHOT IN THE DARK</button>
+<button class="button">CAFE AU LAIT</button> <br> <br>
+
+<button class="button" style="border-color: #E15DF0">TEA</button>
+<button class="button" style="border-color: #E15DF0">LONDON FOG</button>
+<button class="button" style="border-color: #E15DF0">TEA LATTE</button>
+<button class="button" style="border-color: #E15DF0">CHAI TEA LATTE</button>
+<button class="button" style="border-color: #E15DF0">MATCHA LATTE</button> <br><br>
+
+<button class="button" style="border-color: #F0C65D">AMERICANO/<br style="margin-top: 2px;">LONG<br style="margin-top: 2px;">BLACK</button>
+<button class="button" style="border-color: #F0C65D">AMER CON MISTO</button>
+<button class="button" style="border-color: #F0C65D">ESPRESSO</button>
+<button class="button" >BREVE</button>
+<button class="button" >EGGNOG LATTE</button> <br><br>
+
+<button class="button">LATTE/FLAT<br style="margin-top: 2px;">WHITE/<br style="margin-top: 2px;">CORTADO</button>
+<button class="button" >CAPPUCCINO</button>
+<button class="button" >CARAMEL MACCHIATO</button>
+<button class="button" >MOCHA</button>
+<button class="button" >PUMPKIN SPICE LATTE</button> <br><br>
+
+<button class="button" style="border-color: #33CCFF">STEAMED MILK</button>
+<button class="button" style="border-color: #33CCFF">HOT CHOCOLATE</button>
+<button class="button" style="border-color: #33CCFF">CARAMEL APPLE CIDER</button>
+<button class="button" style="border-color: #33CCFF">HOT WATER</button> <br><br>
+
+<button class="button" style="border-color: black">CORTADO</button>
+<button class="button" style="border-color: black">FLAT WHITE</button>
+<button class="button" style="border-color: black">LONG BLACK</button>
+</a>
+</div>
+
+<div class="split left" id="colddrinks">
+<a>
+<button class="button">ICED DRINKS</button>
+<button class="button">FRAPPE</button>
+<button class="button">SODA & JUICE</button>
+<button class="button">COLD MILK</button>
+</a>
+</div>
+
+<div class="split left" id="groceryitems">
+<a>
+<button class="button">BULK COFFEE</button>
+<button class="button" style="border-color: #33CCFF">FROZEN BATTERS</button>
+<button class="button" style="border-color: black">MIXES</button>
+<button class="button" style="border-color: #6CFF52">PIZZA DOUGH</button>
+<button class="button" style="border-color: #E15DF0">SYRUP BOTTLES</button>
+</a>
+</div>
+
+<div class="split left" id="fees">
+<a>
+<button class="button" style="border-color: #33CCFF">DELIVERY CHARGE</button>
+<button class="button">PACKAGING FEES</button>
+</a>
+</div>
+
 
 <br><br><br><br><br>
 
+
 <div class="split right">
   <div class="box">
-	<button class="button2">Select item to update Quantity:</button>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<button class="button2">Select item to<br style="margin: 2px">update Quantity:</button>
+	&nbsp&nbsp
 	<button class="button3">+</button>
 	<button class="button3">-</button>
   </div>
-  
+  <div class="title">
+  Order 
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+  &nbsp&nbsp&nbsp&nbsp&nbsp
+  Qty
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+  &nbsp&nbsp
+  Price($)
+  </div>
 </div>
 
-<script>
-function myFunction() {
-document.getElementById("demo").innerHTML = "Hello Javascript!"
-  }
-
-var forhere = 1;
-
-document.getElementById("forhere").innerHTML = "Section/Screen: TakeOut/Take Out";
-document.getElementById("switch").innerHTML = "Switch To Eat In";
-
-function forhereswitch() {
-  forhere++;
-  if (forhere%2 == 1) {
-    document.getElementById("forhere").innerHTML = "Section/Screen: TakeOut/Take Out";
-	document.getElementById("switch").innerHTML = "Switch To Eat In";}
-  else {
-    document.getElementById("forhere").innerHTML = "Section/Screen: EatIn/Eat In";
-	document.getElementById("switch").innerHTML = "Switch To Take Out";}
-
-}
-
- 
-/*function function2() {
-document.getElementById("demo").innerHTML = "Hello Javascript!"
-}*/
-</script>
+<div class="navbar">
+<center>
+  <a href=# id="bottombar1" onclick="purplebottom1()">FOOD</a>
+  <a href=# id="bottombar2" onclick="purplebottom2()">HOT DRINKS</a>
+  <a href=# id="bottombar3" onclick="purplebottom3()">COLD DRINKS</a>
+  <a href=# id="bottombar4" onclick="purplebottom4()">GROCERY ITEMS</a>
+  <a href=# id="bottombar5" onclick="purplebottom5()">FEES</a>
+  <a href=# class="gray">➩</a>
+</div>
+<script src="myscripts.js"></script>
 </body>
 </html>	
