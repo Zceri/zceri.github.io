@@ -40,6 +40,20 @@ function activerem(){
   document.getElementById("hotdrinksbar7").classList.remove('active');
   document.getElementById("hotdrinksbar8").classList.remove('active');
   document.getElementById("hotdrinksbar9").classList.remove('active');
+  document.getElementById("hotdrinksbar10").classList.remove('active');
+  document.getElementById("hotdrinksbar11").classList.remove('active');
+  document.getElementById("hotdrinksbar12").classList.remove('active');
+  document.getElementById("hotdrinksbar13").classList.remove('active');
+  document.getElementById("hotdrinksbar14").classList.remove('active');
+  document.getElementById("hotdrinksbar15").classList.remove('active');
+  document.getElementById("hotdrinksbar16").classList.remove('active');
+  document.getElementById("hotdrinksbar17").classList.remove('active');
+  document.getElementById("hotdrinksbar18").classList.remove('active');
+  document.getElementById("hotdrinksbar19").classList.remove('active');
+  document.getElementById("hotdrinksbar20").classList.remove('active');
+  document.getElementById("hotdrinksbar21").classList.remove('active');
+  document.getElementById("hotdrinksbar22").classList.remove('active');
+  document.getElementById("hotdrinksbar23").classList.remove('active');
 }
 
 function inuseadd(){
@@ -69,6 +83,23 @@ function inuseadd(){
   document.getElementById("tealatte").classList.add('notinuse');
   document.getElementById("chaitealatte").classList.add('notinuse');
   document.getElementById("matchalatte").classList.add('notinuse');
+  
+  document.getElementById("americano").classList.add('notinuse');
+  document.getElementById("amerconmisto").classList.add('notinuse');
+  document.getElementById("espresso").classList.add('notinuse');
+  document.getElementById("breve").classList.add('notinuse');
+  document.getElementById("eggnoglatte").classList.add('notinuse');
+  
+  document.getElementById("latte").classList.add('notinuse');
+  document.getElementById("cappuccino").classList.add('notinuse');
+  document.getElementById("caramelmacchiato").classList.add('notinuse');
+  document.getElementById("mocha").classList.add('notinuse');
+  document.getElementById("pumpkinspicelatte").classList.add('notinuse');
+  
+  document.getElementById("steamedmilk").classList.add('notinuse');
+  document.getElementById("hotchocolate").classList.add('notinuse');
+  document.getElementById("caramelapplecider").classList.add('notinuse');
+  document.getElementById("hotwater").classList.add('notinuse');
 }
 
 function bottominuseadd(){
@@ -77,6 +108,10 @@ function bottominuseadd(){
   document.getElementById("foodbottom").classList.add('notinuse');
   document.getElementById("hotdrinksbottom1").classList.add('notinuse');
   document.getElementById("hotdrinksbottom2").classList.add('notinuse');
+  document.getElementById("hotdrinksbottom3").classList.add('notinuse');
+  document.getElementById("hotdrinksbottom4").classList.add('notinuse');
+  document.getElementById("hotdrinksbottom5").classList.add('notinuse');  
+
 }
 
 function purplebottom1(){
@@ -275,10 +310,154 @@ function hotdrinks9(){
   document.getElementById("matchalatte").classList.remove('notinuse')
 }
 
+function hotdrinks10(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar10").classList.add('active');
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+  document.getElementById("americano").classList.remove('notinuse')
+}
+
+function hotdrinks11(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar11").classList.add('active');
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+  document.getElementById("amerconmisto").classList.remove('notinuse')
+}
+
+function hotdrinks12(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar12").classList.add('active');
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+  document.getElementById("espresso").classList.remove('notinuse');
+}
+
+function hotdrinks13(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar13").classList.add('active');
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+  document.getElementById("breve").classList.remove('notinuse');
+}
+
+function hotdrinks14(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar14").classList.add('active');
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+  document.getElementById("eggnoglatte").classList.remove('notinuse');
+}
+
+function hotdrinks15(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar15").classList.add('active');
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+  document.getElementById("latte").classList.remove('notinuse');
+}
+
+function hotdrinks16(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar16").classList.add('active');
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+  document.getElementById("cappuccino").classList.remove('notinuse');
+}
+
+function hotdrinks17(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar17").classList.add('active');
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+  document.getElementById("caramelmacchiato").classList.remove('notinuse');
+}
+
+function hotdrinks18(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar18").classList.add('active');
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+  document.getElementById("mocha").classList.remove('notinuse');
+}
+
+function hotdrinks19(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar19").classList.add('active');
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+  document.getElementById("pumpkinspicelatte").classList.remove('notinuse');
+}
+
+function hotdrinks20(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar20").classList.add('active');
+  document.getElementById("hotdrinksbottom5").classList.remove('notinuse');
+  document.getElementById("steamedmilk").classList.remove('notinuse');
+}
+
+function hotdrinks21(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar21").classList.add('active');
+  document.getElementById("hotdrinksbottom5").classList.remove('notinuse');
+  document.getElementById("hotchocolate").classList.remove('notinuse');
+}
+
+function hotdrinks22(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar22").classList.add('active');
+  document.getElementById("hotdrinksbottom5").classList.remove('notinuse');
+  document.getElementById("caramelapplecider").classList.remove('notinuse');
+}
+
+function hotdrinks23(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("hotdrinksbar23").classList.add('active');
+  document.getElementById("hotdrinksbottom5").classList.remove('notinuse');
+  document.getElementById("hotwater").classList.remove('notinuse');
+}
+
 function grayhotdrinks2(){
   activerem();
   bottominuseadd();
   document.getElementById("hotdrinksbottom2").classList.remove('notinuse');
+}
+
+function grayhotdrinks3(){
+  activerem();
+  bottominuseadd();
+  document.getElementById("hotdrinksbottom3").classList.remove('notinuse');
+}
+
+function grayhotdrinks4(){
+  activerem();
+  bottominuseadd();
+  document.getElementById("hotdrinksbottom4").classList.remove('notinuse');
+}
+
+function grayhotdrinks5(){
+  activerem();
+  bottominuseadd();
+  document.getElementById("hotdrinksbottom5").classList.remove('notinuse');
 }
 
 function graybottom1(){
