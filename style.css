@@ -31,6 +31,7 @@ li {
 
 li a {
   padding: 17px 20px;
+  height: 27px;
   display: inline-block;
   width: 60px;
   background-color: #33ccff;
@@ -293,8 +294,8 @@ p {
   border-color: black;
   border-radius: 15px;
   font-family: tahoma;
-  height: 10px;
-  width: 50px;
+  height: 12px;
+  width: 59px;
   vertical-align: middle;
   padding: 15px 5px 25px 5px;
 }
