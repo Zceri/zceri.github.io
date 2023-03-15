@@ -56,15 +56,15 @@
 <button class="button" onclick="hotdrinks22()" style="border-color: #33CCFF">CARAMEL APPLE CIDER</button>
 <button class="button" onclick="hotdrinks23()" style="border-color: #33CCFF">HOT WATER</button> <br><br>
 
-<button class="button" style="border-color: black">CORTADO</button>
-<button class="button" style="border-color: black">FLAT WHITE</button>
-<button class="button" style="border-color: black">LONG BLACK</button>
+<button class="button" onclick="hotdrinks24()" style="border-color: black">CORTADO</button>
+<button class="button" onclick="hotdrinks25()" style="border-color: black">FLAT WHITE</button>
+<button class="button" onclick="hotdrinks26()" style="border-color: black">LONG BLACK</button>
 </a>
 </div>
 
 <div class="split left" id="colddrinks">
 <a>
-<button class="button">ICED DRINKS</button>
+<button class="button" onclick="colddrinks1()">ICED DRINKS</button>
 <button class="button">FRAPPE</button>
 <button class="button">SODA & JUICE</button>
 <button class="button">COLD MILK</button>
@@ -462,7 +462,46 @@
 
 <div class="split left" id="hotwater">
 <a>
-<button class="button">Hot<br style="margin-top: 1px">Water</button>
+<button class="button" style="border-color: #33CCFF">Hot<br style="margin-top: 1px">Water</button>
+</a>
+</div>
+
+<div class="split left" id="cortado">
+<a>
+<button class="button" style="border-color: black">Cortado<br style="margin-top: 1px">4oz</button>
+</a>
+</div>
+
+<div class="split left" id="flatwhite">
+<a>
+<button class="button" style="border-color: black">Flat White<br style="margin-top: 1px">8oz</button>
+</a>
+</div>
+
+<div class="split left" id="longblack">
+<a>
+<button class="button">Long Black<br style="margin-top: 1px">6oz</button>
+</a>
+</div>
+
+<div class="split left" id="iceddrinks">
+<a>
+<button class="button">Blended<br style="margin-top: 1px">Dragon<br style="margin-top: 1px">Fruit<br style="margin-top: 1px">Lemonade</button>
+<button class="button">Blended<br style="margin-top: 1px">Strawberry<br style="margin-top: 1px">Lemonade</button>
+<button class="button">Blended<br style="margin-top: 1px">Lemon<br style="margin-top: 1px">Freeze</button>
+<button class="button">Iced<br style="margin-top: 1px">Americano</button>
+<button class="button">Iced<br style="margin-top: 1px">Caramel<br style="margin-top: 1px">Macchiato</button> <br><br>
+
+<button class="button">Iced<br style="margin-top: 1px">Chai</button>
+<button class="button">Iced<br style="margin-top: 1px">Coffee<br style="margin-top: 1px">16oz</button>
+<button class="button" style="border-color: #F0C65D">Iced<br style="margin-top: 1px">Pumpkin<br style="margin-top: 1px">Latte</button>
+<button class="button">Iced<br style="margin-top: 1px">Mocha</button>
+<button class="button" style="border-color: #F0C65D">Iced<br style="margin-top: 1px">Matcha<br style="margin-top: 1px">Latte</button> <br> <br>
+
+<button class="button" style="border-color: #F0C65D">Iced<br style="margin-top: 1px">Latte</button>
+<button class="button" style="border-color: #33CCFF">Steeped<br style="margin-top: 1px">Iced<br style="margin-top: 1px">Tea</button>
+<button class="button" style="border-color: #287326">Fruit<br style="margin-top: 1px">Smoothie</button>
+<button class="button" style="border-color: #33CCFF">Ice</button>
 </a>
 </div>
 
@@ -556,7 +595,7 @@
 
 <div class="navbar" id="hotdrinksbottom2">
 <b>
-  <a href=# class="gray" onclick="purplebottom2()"><br><img src="arrowup.png" style="width: 33px;"></a>
+  <a href=# class="gray" onclick="grayhotdrinks1()"><br><img src="arrowleft.png" style="width: 33px;"></a>
   <a href=# id="hotdrinksbar5" onclick="hotdrinks5()" style="border-color: #E15DF0">TEA</a>
   <a href=# id="hotdrinksbar6" onclick="hotdrinks6()" style="border-color: #E15DF0">LONDON FOG</a>
   <a href=# id="hotdrinksbar7" onclick="hotdrinks7()" style="border-color: #E15DF0">TEA LATTE</a>
@@ -568,7 +607,7 @@
 
 <div class="navbar" id="hotdrinksbottom3">
 <b>
-  <a href=# class="gray" onclick="purplebottom2()"><br><img src="arrowup.png" style="width: 33px;"></a>
+  <a href=# class="gray" onclick="grayhotdrinks2()"><br><img src="arrowleft.png" style="width: 33px;"></a>
   <a href=# id="hotdrinksbar10" onclick="hotdrinks10()" style="font-size:8px; border-color: #F0C65D">AMERICANO/<br style="margin-top: 2px;">LONG BLACK</a>
   <a href=# id="hotdrinksbar11" onclick="hotdrinks11()" style="border-color: #F0C65D">AMER CON<br style="margin-top: 2px;">MISTO</a>
   <a href=# id="hotdrinksbar12" onclick="hotdrinks12()" style="border-color: #F0C65D">ESPRESS<br style="margin-top: 2px;">O</a>
@@ -580,7 +619,7 @@
 
 <div class="navbar" id="hotdrinksbottom4">
 <b>
-  <a href=# class="gray" onclick="purplebottom2()"><br><img src="arrowup.png" style="width: 33px;"></a>
+  <a href=# class="gray" onclick="grayhotdrinks3()"><br><img src="arrowleft.png" style="width: 33px;"></a>
   <a href=# id="hotdrinksbar15" onclick="hotdrinks15()" style="font-size:7px; border-color: red">LATTE/FLAT<br style="margin-top: 2px;">WHITE/CORTADO</a>
   <a href=# id="hotdrinksbar16" onclick="hotdrinks16()" style="font-size:7px; border-color: red"><br style="margin-top: 5px;">CAPPUCCINO</a>
   <a href=# id="hotdrinksbar17" onclick="hotdrinks17()" style="font-size:7px; border-color: red">CARAMEL<br style="margin-top: 2px;">MACCHIATO</a>
@@ -592,13 +631,34 @@
 
 <div class="navbar" id="hotdrinksbottom5">
 <b>
-  <a href=# class="gray" onclick="purplebottom2()"><br><img src="arrowup.png" style="width: 33px;"></a>
+  <a href=# class="gray" onclick="grayhotdrinks4()"><br><img src="arrowleft.png" style="width: 33px;"></a>
   <a href=# id="hotdrinksbar20" onclick="hotdrinks20()" style="border-color: #33CCFF">STEAMED<br style="margin-top: 2px;">MILK</a>
   <a href=# id="hotdrinksbar21" onclick="hotdrinks21()" style="font-size:8.5px; border-color: #33CCFF">HOT<br style="margin-top: 2px;">CHOCOLATE</a>
   <a href=# id="hotdrinksbar22" onclick="hotdrinks22()" style="font-size:7.5px; border-color: #33CCFF">CARAMEL<br style="margin-top: 2px;">APPLE CIDER</a>
   <a href=# id="hotdrinksbar23" onclick="hotdrinks23()" style="border-color: #33CCFF">HOT<br style="margin-top: 2px;">WATER</a>
   <a href=# onclick="" style="border-color: white;"></a>
-  <a href=# class="gray" onclick="grayhotdrinks2()"><img src="arrowright.png" style="width: 40px;"></a>
+  <a href=# class="gray" onclick="grayhotdrinks6()"><img src="arrowright.png" style="width: 40px;"></a>
+</b>
+</div>
+
+<div class="navbar" id="hotdrinksbottom6">
+<b>
+  <a href=# class="gray" onclick="grayhotdrinks5()"><br><img src="arrowleft.png" style="width: 33px;"></a>
+  <a href=# id="hotdrinksbar24" onclick="hotdrinks24()" style="border-color: black">CORTADO</a>
+  <a href=# id="hotdrinksbar25" onclick="hotdrinks25()" style="border-color: black">FLAT<br style="margin-top: 2px;">WHITE</a>
+  <a href=# id="hotdrinksbar26" onclick="hotdrinks26()" style="border-color: black">LONG<br style="margin-top: 2px;">BLACK</a>
+</b>
+</div>
+
+<div class="navbar" id="colddrinksbottom1">
+<b>
+  <a href=# class="gray" onclick="purplebottom3()"><br><img src="arrowup.png" style="width: 33px;"></a>
+  <a href=# id="colddrinksbar1" onclick="colddrinks1" style="border-color: red">ICED DRINKS</a>
+  <a href=# id="" onclick="" style="border-color: red">FRAPPE</a>
+  <a href=# id="" onclick="" style="border-color: red">SODA & JUICE</a>
+  <a href=# id="" onclick="" style="border-color: red">COLD MILK</a>
+  <a href=# onclick="" style="border-color: white;"></a>
+  <a href=# class="gray" onclick="graycolddrinks2()"><img src="arrowright.png" style="width: 40px;"></a>
 </b>
 </div>
 
