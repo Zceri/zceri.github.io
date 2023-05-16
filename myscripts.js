@@ -58,6 +58,20 @@ function activerem(){
   document.getElementById("hotdrinksbar24").classList.remove('active');
   document.getElementById("hotdrinksbar25").classList.remove('active');
   document.getElementById("hotdrinksbar26").classList.remove('active');
+  
+  document.getElementById("colddrinksbar1").classList.remove('active');
+  document.getElementById("colddrinksbar2").classList.remove('active');
+  document.getElementById("colddrinksbar3").classList.remove('active');
+  document.getElementById("colddrinksbar4").classList.remove('active');
+  
+  document.getElementById("groceryitemsbar1").classList.remove('active');
+  document.getElementById("groceryitemsbar2").classList.remove('active');
+  document.getElementById("groceryitemsbar3").classList.remove('active');
+  document.getElementById("groceryitemsbar4").classList.remove('active');
+  document.getElementById("groceryitemsbar5").classList.remove('active');
+  
+  document.getElementById("feesbar1").classList.remove('active');
+  document.getElementById("feesbar2").classList.remove('active');
 }
 
 function inuseadd(){
@@ -110,6 +124,18 @@ function inuseadd(){
   document.getElementById("longblack").classList.add('notinuse');
   
   document.getElementById("iceddrinks").classList.add('notinuse');
+  document.getElementById("frappe").classList.add('notinuse');
+  document.getElementById("soda&juice").classList.add('notinuse');
+  document.getElementById("coldmilk").classList.add('notinuse');
+  
+  document.getElementById("bulkcoffee").classList.add('notinuse');
+  document.getElementById("frozenbatters").classList.add('notinuse');
+  document.getElementById("mixes").classList.add('notinuse');
+  document.getElementById("pizzadough").classList.add('notinuse');
+  document.getElementById("syrupbottles").classList.add('notinuse');
+  
+  document.getElementById("deliverycharge").classList.add('notinuse');
+  document.getElementById("packagingfees").classList.add('notinuse');
 }
 
 function bottominuseadd(){
@@ -122,7 +148,9 @@ function bottominuseadd(){
   document.getElementById("hotdrinksbottom4").classList.add('notinuse');
   document.getElementById("hotdrinksbottom5").classList.add('notinuse');  
   document.getElementById("hotdrinksbottom6").classList.add('notinuse');  
-  document.getElementById("colddrinksbottom1").classList.add('notinuse');  
+  document.getElementById("colddrinksbottom").classList.add('notinuse');  
+  document.getElementById("groceryitemsbottom").classList.add('notinuse');  
+  document.getElementById("feesbottom").classList.add('notinuse');  
 }
 
 function isbottom(){
@@ -616,14 +644,110 @@ function hotdrinks26(){
   document.getElementById("longblack").classList.remove('notinuse');
 }
 
+
 function colddrinks1(){
   activerem();
   inuseadd();
   bottominuseadd();
   document.getElementById("colddrinksbar1").classList.add('active');
-  document.getElementById("colddrinksbottom1").classList.remove('notinuse');
+  document.getElementById("colddrinksbottom").classList.remove('notinuse');
   document.getElementById("iceddrinks").classList.remove('notinuse');
 }
+
+function colddrinks2(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("colddrinksbar2").classList.add('active');
+  document.getElementById("colddrinksbottom").classList.remove('notinuse');
+  document.getElementById("frappe").classList.remove('notinuse');
+}
+
+function colddrinks3(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("colddrinksbar3").classList.add('active');
+  document.getElementById("colddrinksbottom").classList.remove('notinuse');
+  document.getElementById("soda&juice").classList.remove('notinuse');
+}
+
+function colddrinks4(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("colddrinksbar4").classList.add('active');
+  document.getElementById("colddrinksbottom").classList.remove('notinuse');
+  document.getElementById("coldmilk").classList.remove('notinuse');
+}
+
+
+function groceryitems1(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("groceryitemsbar1").classList.add('active');
+  document.getElementById("groceryitemsbottom").classList.remove('notinuse');
+  document.getElementById("bulkcoffee").classList.remove('notinuse');
+}
+
+function groceryitems2(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("groceryitemsbar2").classList.add('active');
+  document.getElementById("groceryitemsbottom").classList.remove('notinuse');
+  document.getElementById("frozenbatters").classList.remove('notinuse');
+}
+
+function groceryitems3(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("groceryitemsbar3").classList.add('active');
+  document.getElementById("groceryitemsbottom").classList.remove('notinuse');
+  document.getElementById("mixes").classList.remove('notinuse');
+}
+
+function groceryitems4(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("groceryitemsbar4").classList.add('active');
+  document.getElementById("groceryitemsbottom").classList.remove('notinuse');
+  document.getElementById("pizzadough").classList.remove('notinuse');
+}
+
+function groceryitems5(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("groceryitemsbar5").classList.add('active');
+  document.getElementById("groceryitemsbottom").classList.remove('notinuse');
+  document.getElementById("syrupbottles").classList.remove('notinuse');
+}
+
+
+function fees1(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("feesbar1").classList.add('active');
+  document.getElementById("feesbottom").classList.remove('notinuse');
+  document.getElementById("deliverycharge").classList.remove('notinuse');
+}
+
+function fees2(){
+  activerem();
+  inuseadd();
+  bottominuseadd();
+  document.getElementById("feesbar2").classList.add('active');
+  document.getElementById("feesbottom").classList.remove('notinuse');
+  document.getElementById("packagingfees").classList.remove('notinuse');
+}
+
+
+
 
 function grayhotdrinks1(){
   bottominuseadd();
@@ -679,5 +803,8 @@ function forhereswitch() {
 
 }
 
+function deliverycharge1() {
+	document.getElementById("itemsummary").innerHTML = "Delivery Charge             1             $10.00";
+}
 
 
